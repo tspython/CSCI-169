@@ -1,0 +1,11 @@
+[debug] Packaging C:\Users\tspyt\Desktop\CSCI-169\HW0\ScalaHello\target\scala-3.2.1\scalahello_3-0.1.0-SNAPSHOT.jar ...
+[debug] Input file mappings:
+[debug] 	.editorconfig
+[debug] 	  C:\Users\tspyt\Desktop\CSCI-169\HW0\ScalaHello\target\scala-3.2.1\classes\.editorconfig
+[debug] 	Main$.class
+[debug] 	  C:\Users\tspyt\Desktop\CSCI-169\HW0\ScalaHello\target\scala-3.2.1\classes\Main$.class
+[debug] 	Main.class
+[debug] 	  C:\Users\tspyt\Desktop\CSCI-169\HW0\ScalaHello\target\scala-3.2.1\classes\Main.class
+[debug] 	Main.tasty
+[debug] 	  C:\Users\tspyt\Desktop\CSCI-169\HW0\ScalaHello\target\scala-3.2.1\classes\Main.tasty
+[debug] Done packaging.
