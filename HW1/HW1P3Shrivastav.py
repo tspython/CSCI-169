@@ -16,7 +16,7 @@ def partition(input, p, r):
 			input[r] = tmp
 	return r
 
-def quicksort(inut, p, r): 
+def quicksort(ipnut, p, r): 
 	if p < r:
 		j = partition(input, p, r)
 		quicksort(input, p, j-1)

@@ -21,6 +21,7 @@ def report(xs):
     return [resident_count/apartment_count, largest_apartment] #return expected output list
 
 # test
-list = [100, "Jill Johnson", "Billy Ray Cyrus", "Shweta Agarwal", "Tushar Shrivastav",110, "Shweta Agarwal", "Tushar Shrivastav", 120, "Miguel Rosas", "Elena Rosas", "Mateo Rosas", 200, "Jason Chan", 210, "Rosalia Torres"]
+list = [100, "Jill Johnson", "Billy Ray Cyrus",110,"Shweta Agarwal", 120, "Miguel Rosas", "Elena Rosas", "Mateo Rosas", 200, "Jason Chan", 210, "Rosalia Torres"]
 print( report(list) )
-#exepcted output 
+# exepcted output 
+# [1.6,3]

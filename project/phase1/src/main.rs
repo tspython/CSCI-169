@@ -1,3 +1,6 @@
+// Code is based on algorithm described here: https://en.wikipedia.org/wiki/Binary_search_algorithm
+// CSCI-169 - Project Phase 1 Part D
+// Tushar Shrivastav
 fn binary_search(A: &[i32], n: i32, T: i32) -> i32 {
     let mut L = 0;
     let mut R = n - 1;
