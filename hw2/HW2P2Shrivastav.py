@@ -1,12 +1,12 @@
 x = 10
-c=10
+c=10 # creating x and c as global variables
 def spam ():
-    c=14
-    bbeans = 15
-    def inner ():
-        c="funtimes!"
-        def innerinner():
-            global a
+    c=14 # c variable local to spam()
+    bbeans = 15 # bbeans local to spam()
+    def inner (): # nested function
+        c="funtimes!" # another c local to inner()
+        def innerinner(): # nested function
+            global a # 
             a=54
             nonlocal c
             c=54
@@ -18,7 +18,7 @@ def spam ():
     print(x)
     print(c)
     return inner()
-print(spam())
+print(spam()) # printing whatever soan returns, which is whatever inner() returns
 
 # output
 # 10
