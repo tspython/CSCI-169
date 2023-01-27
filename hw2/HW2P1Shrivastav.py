@@ -1,12 +1,14 @@
 def scope_test():
     def do_local():
          spam = "local spam"
+         # local spam var to do_local()
     def do_nonlocal():
         nonlocal spam
         spam = "nonlocal spam"
+        # creates a spam var in scope of scope_test()
     def do_global():
         global spam
-        spam = "global spam"
+        spam = "global spam" # global spam to reference new object "global spam"
     spam = "test spam" 
     do_local()
     print("After local assignment:", spam) # we will output test spam here, this is because do_local() only deals with spam var that is local to do_local()

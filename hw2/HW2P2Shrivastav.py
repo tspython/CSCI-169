@@ -28,4 +28,3 @@ print(spam()) # printing whatever spam returns, which is whatever inner() return
 # 54
 # 68
 
-
