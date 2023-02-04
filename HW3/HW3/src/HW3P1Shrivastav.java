@@ -1,7 +1,6 @@
 import java.util.Arrays;
 
 class QuickSort {
-  static int INPUT_SIZE = 10;
 
   static void print(int[] input) {
     System.out.println(Arrays.toString(input));
@@ -39,7 +38,7 @@ class QuickSort {
     int[] input = {500, 700, 800, 100, 300, 200, 900, 400, 1000, 600};
     System.out.println("Input: ");
     print(input);
-    quicksort(input, 0, INPUT_SIZE - 1);
+    quicksort(input, 0, input.length - 1);
     System.out.println("Output: ");
     print(input);
   }
