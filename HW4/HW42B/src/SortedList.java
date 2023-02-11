@@ -1,5 +1,4 @@
 import java.util.Iterator;
-import java.util.Scanner;
 
 public class SortedList implements Iterable<Integer> {
     protected int len;
@@ -86,19 +85,7 @@ public class SortedList implements Iterable<Integer> {
     public Iterator<Integer> iterator() {
         return new SortedListIterator(list);
     }
-    public static void main(String[] args) {
-        SortedList s = new SortedList();
-        s.insert(5);
-        s.insert(1);
-        s.insert(4);
-        s.insert(2);
-        s.insert(3);
 
-        System.out.println("Contents of the SortedList:");
-        for (int num : s) {
-            System.out.println(num);
-        }
-    }
     private class SortedListIterator implements Iterator<Integer> {
         private final int[] list;
         private int currentIndex = 0;

@@ -5,8 +5,7 @@
 #include <ctime>
 #include "Food.h"
 
-class Vegetable : public virtual Food
-{
+class Vegetable : public virtual Food {
 protected:
     std::tm expiration;
 
@@ -17,23 +16,20 @@ public:
     virtual std::tm expireTime();
 };
 
-Vegetable::Vegetable() 
-{
+Vegetable::Vegetable() {
     name = "Vegetable";
     time_t t = time(0);
     expiration = *localtime(&t);
     std::cout << "Vegetable has been created" << std::endl;
 }
 
-Vegetable::Vegetable(std::string n, std::tm e) 
-{
+Vegetable::Vegetable(std::string n, std::tm e) {
     name = n;
     expiration = e;
     std::cout << "Vegetable has been created" << std::endl;
 }
 
-std::tm Vegetable::expireTime()
-{
+std::tm Vegetable::expireTime() {
     return expiration;
 }
 

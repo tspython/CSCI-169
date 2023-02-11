@@ -6,15 +6,13 @@
 #include "Fruit.h"
 #include "Vegetable.h"
 
-class Tomato : public virtual Vegetable, public virtual Fruit
-{
+class Tomato : public virtual Vegetable, public virtual Fruit {
 public:
     Tomato();
     Tomato(std::tm e, std::tm r, std::string n);
 };
 
-Tomato::Tomato() 
-{
+Tomato::Tomato() {
     name = "Tomato";
     time_t t = time(0);
     ripe = *localtime(&t);
@@ -22,8 +20,7 @@ Tomato::Tomato()
     std::cout << "Tomato is created" << std::endl;
 }
 
-Tomato::Tomato(std::tm e, std::tm r, std::string n)
-{
+Tomato::Tomato(std::tm e, std::tm r, std::string n) {
     name = n;
     ripe = r;
     expiration = e;

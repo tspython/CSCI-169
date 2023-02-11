@@ -5,6 +5,7 @@
 #include <iostream>
 
 class Food {
+
 protected:
     std::string name;
 

@@ -6,31 +6,27 @@
 #include <ctime>
 #include "Fruit.h"
 
-class Apple : public virtual Fruit
-{
-publi
+class Apple : public virtual Fruit {
+public:
     Apple();
     Apple(std::tm r);
 
     virtual void prepare();
 };
 
-Apple::Apple() : Fruit()
-{
+Apple::Apple() : Fruit() {
     name = "Apple";
     ripe = std::time(0);
     std::cout << "Creating Apple" << std::endl;
 }
 
-Apple::Apple(std::tm r) 
-{
+Apple::Apple(std::tm r) {
     name = "Apple";
     ripe = r;
     std::cout << "Creating Apple" << std::endl;
 }
 
-void Apple::prepare()
-{
+void Apple::prepare() {
     std::cout << "Core the " << name << std::endl;
 }
 
